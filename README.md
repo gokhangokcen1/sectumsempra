@@ -44,9 +44,9 @@ history = model.fit(x_train, y_train, alpha=1e-2, num_iters=1000, verbose=True)
 ```python
 model.predict(x_train)
 ```
->>>  array([10.12677403, 20.05584615, 29.98491827, 39.91399038])
+`array([10.12677403, 20.05584615, 29.98491827, 39.91399038])`
 
 ```python
 y_train
 ```
->>>  array([10, 20, 30, 40])
+`array([10, 20, 30, 40])`
