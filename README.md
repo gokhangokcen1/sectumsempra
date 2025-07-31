@@ -1,11 +1,17 @@
 # sectumsempra
 
-```
+
+
+## Kullanım
+
+### Import
+
+```python
 from linear_regression import LinearRegression
 import numpy as np 
 ```
 
-
+### verilerin yazılması
 ```python
 x_train = np.array([
     [1, 2, 3, 4],
@@ -16,7 +22,7 @@ x_train = np.array([
 y_train = np.array([10, 20, 30, 40])
 ```
 
-
+### model ve fit
 ```python
 model = LinearRegression()
 history = model.fit(x_train, y_train, alpha=1e-2, num_iters=1000, verbose=True)
@@ -34,26 +40,13 @@ history = model.fit(x_train, y_train, alpha=1e-2, num_iters=1000, verbose=True)
     Epoch  900: Cost = 0.0074
 
 
-
+### predict
 ```python
 model.predict(x_train)
 ```
-
-
-
-
-    array([10.12677403, 20.05584615, 29.98491827, 39.91399038])
-
-
-
+>>>  array([10.12677403, 20.05584615, 29.98491827, 39.91399038])
 
 ```python
 y_train
 ```
-
-
-
-
-    array([10, 20, 30, 40])
-
-
+>>>  array([10, 20, 30, 40])
